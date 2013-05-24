@@ -7,7 +7,7 @@ WARNING - this is a WIP, use at your own risk!
 ## Installation
 
 ```ruby
-gem 'activeadmin-menus', :github => "stefanoverna/activeadmin-menus", :branch => "master"
+gem 'activeadmin-menus', github: "stefanoverna/activeadmin-menus", branch: "master"
 ```
 
 ```
@@ -42,14 +42,13 @@ end
 
 ```ruby
 c.add_area :header do |a|
-
   # This wraps lists of sibling items
   # `content` is the list of sibling items
   # `item` is the parent item (when rendering the root menu items, it will be nil)
   a.list_wrapper = lambda { |content, item| content_tag(:ul, content) }
 
   # This wraps the single menu item
-  a.item_wrapper = lambda { |content, active, item| content_tag(:li, content, active_attrs(active)) }
+  a.item_wrapper = lambda { |content, active, item| content_tag(:li, content) }
 
   # This specifies how to render custom (i.e. Label + URL) menu items
   a.custom_item_renderer = lambda { |item| link_to(item.label, item.url) }
@@ -60,7 +59,6 @@ end
 
 ```ruby
 c.add_resource_class Page do |i|
-
   # This specifies the method to call to retreive the list of resources that 
   # can be used to build menu items. Lambdas are also allowed
   # i.collection = lambda { Page.all }

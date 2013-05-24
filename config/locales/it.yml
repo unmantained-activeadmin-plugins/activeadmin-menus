@@ -1,0 +1,47 @@
+it:
+  activerecord:
+    models:
+      menu:
+        one: 'Menù'
+        other: 'Menù'
+      menu_item:
+        one: 'Collegamento'
+        other: 'Collegamenti'
+      predefined_menu_item:
+        one: 'Collegamento predefinito'
+        other: 'Collegamenti predefiniti'
+      custom_menu_item:
+        one: 'Collegamento libero'
+        other: 'Collegamenti liberi'
+      resource_menu_item:
+        one: 'Collegamento verso risorsa'
+        other: 'Collegamenti verso risorsa'
+    attributes:
+      menu:
+        name: 'Nome'
+        area: 'Area'
+      predefined_menu_item:
+        parent_id: 'Padre'
+        code: 'Collegamento'
+      resource_menu_item:
+        parent_id: 'Padre'
+        resource_type: 'Tipo risorsa'
+        resource_id: 'Risorsa'
+      custom_menu_item:
+        parent_id: 'Padre'
+      custom_menu_item_translation:
+        label: 'Testo'
+        url: 'URL'
+
+  activeadmin:
+    menus:
+      edit_items: 'Modifica collegamenti'
+      add_new_item: 'Aggiungi collegamento: '
+      new_predefined: 'Predefinito'
+      new_resource: 'Verso risorsa'
+      new_custom: 'Libero'
+      details: 'Dettagli'
+      link_details: 'Modifica link'
+
+
+

@@ -1,0 +1,48 @@
+it:
+  activerecord:
+    models:
+      menu:
+        one: 'Menu'
+        other: 'Menu'
+      menu_item:
+        one: 'Item'
+        other: 'Items'
+      predefined_menu_item:
+        one: 'Predefined item'
+        other: 'Predefined items'
+      custom_menu_item:
+        one: 'Custom item'
+        other: 'Custom item'
+      resource_menu_item:
+        one: 'Resource item'
+        other: 'Resource item'
+    attributes:
+      menu:
+        name: 'name'
+        area: 'Area'
+      predefined_menu_item:
+        parent_id: 'Parent'
+        code: 'Item'
+      resource_menu_item:
+        parent_id: 'Parent'
+        resource_type: 'Resource type'
+        resource_id: 'Resoruce'
+      custom_menu_item:
+        parent_id: 'Parent'
+      custom_menu_item_translation:
+        label: 'Label'
+        url: 'URL'
+
+  activeadmin:
+    menus:
+      edit_items: 'Edit items'
+      add_new_item: 'Add a new item: '
+      new_predefined: 'Predefined'
+      new_resource: 'Resource'
+      new_custom: 'Custom'
+      details: 'Details'
+      link_details: 'Edit link'
+
+
+
+

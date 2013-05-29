@@ -6,7 +6,7 @@ module ActiveAdmin
     mattr_accessor :resource_items
     mattr_accessor :areas
 
-    def self.initialize
+    def self.configure
       @@predefined_items = []
       @@resource_items = []
       @@areas = []

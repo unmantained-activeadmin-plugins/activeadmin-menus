@@ -11,7 +11,7 @@ gem 'activeadmin-menus', github: "stefanoverna/activeadmin-menus", branch: "mast
 ```
 
 ```
-rails g activeadmin:menus:install
+rails g active_admin:menus:install
 rake db:migrate
 ```
 

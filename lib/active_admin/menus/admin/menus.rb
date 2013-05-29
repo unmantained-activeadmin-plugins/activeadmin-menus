@@ -43,6 +43,8 @@ end
 
 ActiveAdmin.register Menu do
   controller do
+    helper MenuItemHelper
+
     def show
       redirect_to admin_menu_menu_items_path(resource)
     end

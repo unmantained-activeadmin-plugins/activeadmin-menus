@@ -2,9 +2,9 @@ class CreateActiveAdminMenus < ActiveRecord::Migration
   def migrate(direction)
     super
     if direction == :up
-      ActiveAdmin::Menus::CustomMenuItem.create_translation_table! label: :string, url: :text
+      CustomMenuItem.create_translation_table! label: :string, url: :text
     else
-      ActiveAdmin::Menus::CustomMenuItem.drop_translation_table!
+      CustomMenuItem.drop_translation_table!
     end
   end
 

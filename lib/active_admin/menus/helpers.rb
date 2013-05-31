@@ -11,6 +11,7 @@ module ActiveAdmin
 
       def render_menu(area)
         menu = ::Menu.find_by_area(area)
+        return "" unless menu.present?
         area_config = ActiveAdmin::Menus.area_config(area)
         children_html = menu.menu_items.roots.map do |item|
           render_menu_item(area_config, item)

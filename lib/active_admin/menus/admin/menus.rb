@@ -101,7 +101,7 @@ ActiveAdmin.register MenuItem do
     label do |item|
       name_for_item(item)
     end
-    default_actions
+    actions
   end
 end
 
@@ -188,5 +188,4 @@ ActiveAdmin.register CustomMenuItem do
     end
   end
 end
-
 

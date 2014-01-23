@@ -1,5 +1,4 @@
 class Menu < ActiveRecord::Base
-  attr_accessible :name, :area
   self.table_name = "active_admin_menus"
   validates :name, presence: true
   validates :area, uniqueness: true

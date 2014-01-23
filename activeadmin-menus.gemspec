@@ -8,16 +8,15 @@ Gem::Specification.new do |s|
   s.version     = ActiveAdmin::Menus::VERSION
   s.authors     = ["Stefano Verna"]
   s.email       = ["stefano.verna@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveadminMenus."
-  s.description = "TODO: Description of ActiveadminMenus."
+  s.homepage    = "https://github.com/stefanoverna/activeadmin-menus"
+  s.summary     = "ActiveadminMenus."
+  s.description = "ActiveadminMenus."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "README.md"]
 
   s.add_dependency "ancestry"
+  s.add_dependency "activeadmin"
   s.add_dependency "activeadmin-sortable-tree"
-  s.add_dependency "activeadmin-globalize3"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "activeadmin-globalize"
 end
 
